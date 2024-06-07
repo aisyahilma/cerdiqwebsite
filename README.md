@@ -14,51 +14,50 @@ Terinspirasi dari [https://www.behance.net/](https://dribbble.com/shots/18788816
 ___
 This project will be managed by ![Aisyah Ilma](https://github.com/aisyahilma)
 
-##
-# Proyek Website Sekolah
+# School Website Project
 
-Selamat datang di repositori proyek website sekolah. Proyek ini bertujuan untuk membuat sebuah website informatif dan interaktif untuk sebuah sekolah. Website ini akan menyediakan berbagai informasi penting terkait sekolah, termasuk informasi akademik, kegiatan ekstrakurikuler, berita terbaru, dan lain-lain.
+Welcome to the repository of the school website project. This project aims to create an informative and interactive website for a school. The website will provide various important information related to the school, including academic information, extracurricular activities, latest news, and more.
 
-## Daftar Isi
+## Table of Contents
 
-- [Fitur](#fitur)
-- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
-- [Prasyarat](#prasyarat)
-- [Instalasi](#instalasi)
-- [Cara Penggunaan](#cara-penggunaan)
-- [Struktur Proyek](#struktur-proyek)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Fitur
+## Features
 
-- Halaman Beranda
-- Profil Sekolah
-- Informasi Akademik
-- Kegiatan Ekstrakurikuler
-- Berita dan Pengumuman
-- Kontak dan Lokasi
-- Formulir Pendaftaran Online
+- Homepage
+- School Profile
+- Academic Information
+- Extracurricular Activities
+- News and Announcements
+- Contact and Location
+- Online Registration Form
 
-## Teknologi yang Digunakan
+## Technologies Used
 
 - **Front-end**: HTML, CSS, JavaScript, Bootstrap
 - **Back-end**: Node.js, Express.js
 - **Database**: MongoDB
-- **Versi Kontrol**: Git
-- **Alat Lainnya**: Visual Studio Code, Postman
+- **Version Control**: Git
+- **Other Tools**: Visual Studio Code, Postman
 
-## Prasyarat
+## Prerequisites
 
-Pastikan Anda telah menginstal perangkat lunak berikut sebelum memulai proyek ini:
+Ensure you have installed the following software before starting this project:
 
-- [Node.js](https://nodejs.org/) (versi 12 atau lebih baru)
-- [MongoDB](https://www.mongodb.com/) (versi terbaru)
+- [Node.js](https://nodejs.org/) (version 12 or newer)
+- [MongoDB](https://www.mongodb.com/) (latest version)
 - [Git](https://git-scm.com/)
 
-## Instalasi
+## Installation
 
-1. **Clone repositori ini:**
+1. **Clone this repository:**
    ```bash
-   git clone https://github.com/username/proyek-website-sekolah.git
-   cd proyek-website-sekolah
+   git clone https://github.com/username/school-website-project.git
+   cd school-website-project
