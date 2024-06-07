@@ -35,12 +35,11 @@ Welcome to the repository of the school website project. This project aims to cr
 
 ## Technologies Used
 
-- **Front-end**: HTML, CSS, JavaScript, Bootstrap
+- **Front-end**: HTML, CSS, JavaScript, Tailwind
 - **Back-end**: Node.js, Express.js
 - **Database**: MongoDB
 - **Version Control**: Git
-- **Other Tools**: Visual Studio Code, Postman
-
+- **Other Tools**: Visual Studio Code,Vercel
 ## Prerequisites
 
 Ensure you have installed the following software before starting this project:
