@@ -1,27 +1,19 @@
-# Cerdiq Website
-Repository for landing page School
+# Cerdiq School Website
+
+Welcome to the Cerdiq School Website project repository. This project aims to create an informative and interactive website for a school, providing various important information related to academics, extracurricular activities, news, and more.
 
 ## Design Mockup
-Inspiration by [https://www.behance.net/](https://dribbble.com/shots/18788816-School-Website)
+This project is inspired by the design mockup on [Dribbble](https://dribbble.com/shots/18788816-School-Website).
 
 ## About
-___
-This project will be managed by ![Aisyah Ilma](https://github.com/aisyahilma)
-
-# School Website Project
-
-Welcome to the repository of the school website project. This project aims to create an informative and interactive website for a school. The website will provide various important information related to the school, including academic information, extracurricular activities, latest news, and more.
+This project is managed by [Aisyah Ilma](https://github.com/aisyahilma).
 
 ## Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -30,7 +22,7 @@ Welcome to the repository of the school website project. This project aims to cr
 - Academic Information
 - Extracurricular Activities
 - News and Announcements
-- Contact and Location
+- Contact Information and Location
 - Online Registration Form
 
 ## Technologies Used
@@ -39,18 +31,4 @@ Welcome to the repository of the school website project. This project aims to cr
 - **Back-end**: Node.js, Express.js
 - **Database**: MongoDB
 - **Version Control**: Git
-- **Other Tools**: Visual Studio Code,Vercel
-## Prerequisites
-
-Ensure you have installed the following software before starting this project:
-
-- [Node.js](https://nodejs.org/) (version 12 or newer)
-- [MongoDB](https://www.mongodb.com/) (latest version)
-- [Git](https://git-scm.com/)
-
-## Installation
-
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/username/school-website-project.git
-   cd school-website-project
+- **Other Tools**: Visual Studio Code, Vercel
