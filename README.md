@@ -5,16 +5,6 @@ Welcome to the Cerdiq School Website project repository. This project aims to cr
 ## Design Mockup
 This project is inspired by the design mockup on [Dribbble](https://dribbble.com/shots/18788816-School-Website).
 
-## About
-This project is managed by [Aisyah Ilma](https://github.com/aisyahilma).
-
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-
 ## Features
 
 - Homepage
@@ -28,7 +18,3 @@ This project is managed by [Aisyah Ilma](https://github.com/aisyahilma).
 ## Technologies Used
 
 - **Front-end**: HTML, CSS, JavaScript, Tailwind
-- **Back-end**: Node.js, Express.js
-- **Database**: MongoDB
-- **Version Control**: Git
-- **Other Tools**: Visual Studio Code, Vercel
