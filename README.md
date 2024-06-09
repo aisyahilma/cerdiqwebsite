@@ -17,4 +17,4 @@ This project is inspired by the design mockup on [Dribbble](https://dribbble.com
 
 ## Technologies Used
 
-- **Front-end**: HTML, CSS, JavaScript, Tailwind
+- **Front-end**: HTML, CSS, Tailwind
