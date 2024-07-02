@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Example - Pesantren Cerdiq</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1,
+      footer p {
+        margin: 10px 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+          3,
+          1fr
+        ); /* 3 kolom dengan ukuran yang sama */
+        gap: 20px; /* Jarak antar grid items */
+        padding: 20px;
+      }
+
+      .grid-item {
+        background-color: #4caf50;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .content {
+        grid-column: span 3; /* Membuat item ini mengambil 3 kolom */
+        background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Empowering Students with Knowledge and Faith</p>
+    </header>
+
+    <div class="grid-container">
+      <div class="content">
+        <p>
+          Pesantren Cerdiq provides a comprehensive education system that
+          integrates Islamic teachings with modern academic disciplines. Our
+          curriculum is designed to foster intellectual, emotional, and
+          spiritual growth, preparing students to become leaders in their
+          communities and beyond. Join us in our mission to empower students
+          with knowledge and faith.
+        </p>
+      </div>
+      <div class="grid-item">Character Building</div>
+      <div class="grid-item">Advanced Learning</div>
+      <div class="grid-item">Technological Integration</div>
+      <div class="grid-item">Global Perspectives</div>
+      <div class="grid-item">Community Engagement</div>
+      <div class="grid-item">Innovative Curriculum</div>
+    </div>
+
+    <footer>
+      <p>Contact us at info@pesantrencerdiq.id for more information.</p>
+    </footer>
+  </body>
+</html>

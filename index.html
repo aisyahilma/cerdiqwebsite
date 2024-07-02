@@ -12,20 +12,33 @@
         padding: 0;
         background-color: #f8f9fa;
         color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
       header {
         background: linear-gradient(90deg, #ff0000, #ffffff);
         color: white;
         padding: 20px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header img {
+        max-width: 150px;
+        height: auto;
       }
       nav ul {
         list-style-type: none;
         padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
       nav ul li {
-        display: inline;
-        margin-right: 20px;
+        margin: 5px 15px;
       }
       nav ul li a {
         color: white;
@@ -36,20 +49,36 @@
         text-decoration: underline;
       }
       main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
       }
       section {
         margin-bottom: 40px;
+        width: 100%;
       }
       section h2 {
         color: #ff0000;
+        text-align: center;
+      }
+      section p,
+      section ul,
+      section ol,
+      form {
+        padding: 0 20px;
       }
       footer {
         background: linear-gradient(90deg, #ffffff, #ff0000);
         color: white;
         text-align: center;
         padding: 10px;
-        position: fixed;
+        position: relative;
         width: 100%;
         bottom: 0;
       }
@@ -84,13 +113,24 @@
         max-width: 100%;
         height: auto;
       }
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+        }
+        nav ul li {
+          margin: 5px 0;
+        }
+        form input,
+        form textarea {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
       <img src="/assets/images/logo.png" alt="Logo Cerdiq" />
       <h1>Cerdiq School</h1>
-      <!-- kemungkinan akan diterjemahkan ke Bahasa Indonesia-->
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -104,110 +144,117 @@
     </header>
 
     <main>
-      <section id="home">
-        <h2>Home</h2>
-        <p>
-          <i>Welcome to</i> <b>Cerdiq School</b>.
-          <strong>
-            We are committed to educating the young generation with Islamic
-            values and modern knowledge.
-          </strong>
-        </p>
-      </section>
+      <div class="container">
+        <section id="home">
+          <h2>Home</h2>
+          <p>
+            <i>Welcome to</i> <b>Cerdiq School</b>.
+            <strong>
+              We are committed to educating the young generation with Islamic
+              values and modern knowledge.
+            </strong>
+          </p>
+        </section>
 
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          Cerdiq School was founded in 2019 with the aim of providing quality
-          religious and academic education. We focus on building strong Islamic
-          character as well as the development of science and technology.
-        </p>
-      </section>
+        <section id="about">
+          <h2>About Us</h2>
+          <p>
+            Cerdiq School was founded in 2019 with the aim of providing quality
+            religious and academic education. We focus on building strong
+            Islamic character as well as the development of science and
+            technology.
+          </p>
+        </section>
 
-      <section id="programs">
-        <h2>Programs</h2>
-        <ul>
-          <li>
-            <h3>Yellow Book Study</h3>
-            <p>
-              &#x2714; We provide yellow book studies to deepen the knowledge of
-              Islamic religion.
-            </p>
-          </li>
-          <li>
-            <h3>Quran Memorization Program</h3>
-            <p>
-              &#x2714; This program aims to guide students in memorizing the
-              Quran with effective methods.
-            </p>
-          </li>
-          <li>
-            <h3>Extracurricular Activities</h3>
-            <p>
-              &#x2714; We offer various extracurricular activities such as
-              sports, arts, and technology to develop students' talents and
-              interests.
-            </p>
-          </li>
-        </ul>
+        <section id="programs">
+          <h2>Programs</h2>
+          <ul>
+            <li>
+              <h3>Yellow Book Study</h3>
+              <p>
+                &#x2714; We provide yellow book studies to deepen the knowledge
+                of Islamic religion.
+              </p>
+            </li>
+            <li>
+              <h3>Quran Memorization Program</h3>
+              <p>
+                &#x2714; This program aims to guide students in memorizing the
+                Quran with effective methods.
+              </p>
+            </li>
+            <li>
+              <h3>Extracurricular Activities</h3>
+              <p>
+                &#x2714; We offer various extracurricular activities such as
+                sports, arts, and technology to develop students' talents and
+                interests.
+              </p>
+            </li>
+          </ul>
 
-        <h2>Qur'anic Programs</h2>
-        <ol type="a">
-          <li>Tahfizhul Qur'an</li>
-          <li>Pra Tahsin / Tahsin</li>
-        </ol>
-      </section>
+          <h2>Qur'anic Programs</h2>
+          <ol type="a">
+            <li>Tahfizhul Qur'an</li>
+            <li>Pra Tahsin / Tahsin</li>
+          </ol>
+        </section>
 
-      <section id="gallery">
-        <h2>Gallery</h2>
-        <p>View photos of activities and facilities at our pesantren.</p>
-        <ul>
-          <li><img src="photo1.jpg" alt="Study Activity" /></li>
-          <li><img src="photo2.jpg" alt="Quran Memorization" /></li>
-          <li><img src="photo3.jpg" alt="Sports Extracurricular" /></li>
-        </ul>
-      </section>
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <p>View photos of activities and facilities at our pesantren.</p>
+          <ul>
+            <li><img src="photo1.jpg" alt="Study Activity" /></li>
+            <li><img src="photo2.jpg" alt="Quran Memorization" /></li>
+            <li><img src="photo3.jpg" alt="Sports Extracurricular" /></li>
+          </ul>
+        </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          If you have any questions or want to visit, please contact us through
-          the form below.
-        </p>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <br />
-          <button type="submit">Send</button>
-        </form>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            If you have any questions or want to visit, please contact us
+            through the form below.
+          </p>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br />
+            <button type="submit">Send</button>
+          </form>
 
-        <h2>Social Media</h2>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/tahfizhqucerdiq/" target="_blank"
-              >Instagram Cerdiq</a
-            >
-          </li>
-          <li>
-            <a href="https://web.facebook.com/tahfizhqucerdiq/" target="_blank"
-              >Facebook Cerdiq</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UC3ZjIfCbhPQkMpYQqoz47iw"
-              target="_blank"
-              >YouTube Cerdiq</a
-            >
-          </li>
-        </ul>
-      </section>
+          <h2>Social Media</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/tahfizhqucerdiq/"
+                target="_blank"
+                >Instagram Cerdiq</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.facebook.com/tahfizhqucerdiq/"
+                target="_blank"
+                >Facebook Cerdiq</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC3ZjIfCbhPQkMpYQqoz47iw"
+                target="_blank"
+                >YouTube Cerdiq</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer>

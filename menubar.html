@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menubar</title>
+    <link rel="stylesheet" href="menubar.css" />
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      header {
+        background: #c62828; /* Merah tua */
+        color: #fff;
+        padding: 30px 0;
+        border-bottom: #77ab59 3px solid; /* Hijau */
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #c62828; /* Merah tua */
+        text-align: center;
+      }
+
+      nav ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+
+      .main {
+        padding: 20px;
+        background: #fff;
+        margin-top: 10px;
+      }
+
+      .main img {
+        width: 100%;
+        height: auto;
+      }
+
+      .main h2 {
+        color: #333;
+        font-size: 2em;
+      }
+
+      footer {
+        background: #c62828; /* Merah tua */
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 10px;
+      }
+
+      /* Media Queries */
+      @media (max-width: 1200px) {
+        .container {
+          width: 90%;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .container {
+          width: 95%;
+        }
+        header h1 {
+          font-size: 2em;
+        }
+        .main h2 {
+          font-size: 1.8em;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+          padding: 0 10px;
+        }
+        nav ul {
+          text-align: center;
+        }
+        nav ul li {
+          display: block;
+          padding: 10px 0;
+        }
+        header h1 {
+          font-size: 1.8em;
+        }
+        .main h2 {
+          font-size: 1.6em;
+        }
+        .main p,
+        .main ul {
+          font-size: 1em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 1.5em;
+        }
+        nav ul li a {
+          font-size: 14px;
+        }
+        .main h2 {
+          font-size: 1.4em;
+        }
+        .main p,
+        .main ul {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Pesantren Cerdiq</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container main" id="home">
+      <h2>Welcome to Pesantren Cerdiq</h2>
+      <p>
+        Pesantren Cerdiq is an educational institution dedicated to providing a
+        balanced education combining religious and academic knowledge. Our
+        mission is to nurture the next generation of leaders who are not only
+        knowledgeable but also ethical and compassionate.
+      </p>
+      <img src="pesantren.jpg" alt="Pesantren Cerdiq" />
+    </div>
+
+    <div class="container main" id="about">
+      <h2>About Us</h2>
+      <p>
+        Established in 1995, Pesantren Cerdiq has grown to become a leading
+        institution in the region, known for its commitment to excellence in
+        education and character building. Our dedicated team of educators and
+        staff work tirelessly to create an environment conducive to learning and
+        personal growth.
+      </p>
+    </div>
+
+    <div class="container main" id="programs">
+      <h2>Our Programs</h2>
+      <ul>
+        <li>Islamic Studies</li>
+        <li>General Education</li>
+        <li>Leadership Training</li>
+        <li>Community Service</li>
+      </ul>
+    </div>
+
+    <div class="container main" id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or would like to learn more about Pesantren
+        Cerdiq, please don't hesitate to contact us:
+      </p>
+      <p>Email: info@pesantrencerdiq.com</p>
+      <p>Phone: +62 123 456 789</p>
+      <p>Address: Jl. Pesantren No. 123, Jakarta, Indonesia</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Pesantren Cerdiq. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

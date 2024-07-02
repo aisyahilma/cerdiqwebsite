@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Fixed Example - Pesantren Cerdiq</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Ensure header stays on top */
+      }
+
+      header h1 {
+        margin: 10px 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 120px auto; /* Adjust margin to avoid overlapping with fixed header */
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 1000; /* Ensure footer stays on top */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Empowering Students with Knowledge and Faith</p>
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <p>
+          Pesantren Cerdiq is committed to providing a comprehensive educational
+          experience that combines traditional Islamic teachings with modern
+          academic curriculum. Our mission is to nurture students who are not
+          only knowledgeable but also morally upright and socially responsible.
+        </p>
+        <p>
+          Our curriculum emphasizes critical thinking, creativity, and ethical
+          behavior, preparing students to excel in a globalized world. We offer
+          a wide range of subjects and extracurricular activities to cater to
+          the diverse interests and talents of our students.
+        </p>
+        <p>
+          Located in a serene environment conducive to learning, Pesantren
+          Cerdiq provides state-of-the-art facilities including classrooms
+          equipped with the latest technology, a well-stocked library, and
+          recreational amenities. We prioritize holistic development, ensuring
+          our students thrive academically, spiritually, and emotionally.
+        </p>
+        <p>
+          Join us at Pesantren Cerdiq and embark on a journey of knowledge,
+          growth, and community service. Together, we strive to make a positive
+          impact on society through education and empowerment.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        For more information, visit www.pesantrencerdiq.id or contact us at
+        info@pesantrencerdiq.id
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Align Self Example - Pesantren Cerdiq</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1,
+      footer p {
+        margin: 10px 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px;
+        grid-gap: 20px;
+        padding: 20px;
+      }
+
+      .item {
+        background-color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .align-start {
+        align-self: start; /* Align item to the start vertically */
+      }
+
+      .align-center {
+        align-self: center; /* Align item to the center vertically */
+      }
+
+      .align-end {
+        align-self: end; /* Align item to the end vertically */
+      }
+
+      .main {
+        grid-column: 1 / -1;
+        background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .content {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Empowering Students with Knowledge and Faith</p>
+    </header>
+
+    <div class="grid-container">
+      <div class="item align-start">Menu</div>
+      <div class="item align-center">Sidebar</div>
+      <div class="item align-end">Additional Info</div>
+      <div class="main">
+        <div class="content">
+          <p>
+            Pesantren Cerdiq is dedicated to providing a balanced education that
+            harmonizes traditional Islamic teachings with modern academic
+            knowledge. Our aim is to nurture students who are knowledgeable,
+            ethical, and prepared for the challenges of the future.
+          </p>
+          <p>
+            The curriculum at Pesantren Cerdiq is carefully designed to cover a
+            broad spectrum of subjects. Students are encouraged to develop their
+            intellectual capabilities while also strengthening their faith and
+            moral values.
+          </p>
+          <p>
+            Our facilities are designed to support a conducive learning
+            environment. We offer well-equipped classrooms, a comprehensive
+            library, and various sports facilities to ensure our students'
+            holistic development.
+          </p>
+          <p>
+            Pesantren Cerdiq also emphasizes community engagement, encouraging
+            students to participate in various social activities that promote a
+            sense of responsibility and empathy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        For more information, visit www.pesantrencerdiq.id or contact us at
+        info@pesantrencerdiq.id
+      </p>
+    </footer>
+  </body>
+</html>

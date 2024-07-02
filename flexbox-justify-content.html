@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox with justify-content Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        background-color: #f2f2f2;
+        margin: 20px;
+      }
+
+      .item {
+        flex-basis: 200px; /* Ukuran awal sebelum flex-grow atau flex-shrink */
+        height: 100px; /* Tinggi tetap untuk konsistensi dalam contoh ini */
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        line-height: 100px; /* Center content vertically */
+      }
+
+      header,
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      header h1,
+      footer p {
+        margin: 10px 0;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: justify;
+        background-color: #e0e0e0;
+        margin: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Innovative Islamic Education for the Digital Age</p>
+    </header>
+
+    <div class="container">
+      <div class="item">Student Life</div>
+      <div class="item">Academic Programs</div>
+      <div class="item">Community Service</div>
+    </div>
+
+    <div class="content">
+      <p>
+        Pesantren Cerdiq is an innovative Islamic boarding school dedicated to
+        providing high-quality education in the digital age. Our institution
+        focuses on a balanced curriculum that includes traditional Islamic
+        teachings alongside modern scientific and technological knowledge. At
+        Pesantren Cerdiq, we believe that empowering future leaders requires a
+        holistic approach that nurtures both the mind and the spirit. Our
+        students are encouraged to engage in various academic programs,
+        community services, and extracurricular activities that promote personal
+        and professional growth. By fostering a supportive and dynamic learning
+        environment, Pesantren Cerdiq aims to produce graduates who are not only
+        well-versed in their religious studies but also capable of making
+        significant contributions to society through their expertise in
+        technology and innovation.
+      </p>
+      <p>
+        The student life at Pesantren Cerdiq is enriched with numerous
+        opportunities for intellectual and spiritual development. Our
+        state-of-the-art facilities provide a conducive environment for learning
+        and innovation. Students have access to modern classrooms, libraries,
+        computer labs, and recreational areas. Additionally, our dedicated
+        faculty members are committed to guiding and mentoring students,
+        ensuring that they reach their full potential. Through our comprehensive
+        academic programs, students gain a deep understanding of various
+        subjects, from Quranic studies to advanced sciences. Furthermore, our
+        community service initiatives allow students to apply their knowledge in
+        real-world settings, fostering a sense of social responsib
+      </p>
+    </div>
+  </body>
+</html>

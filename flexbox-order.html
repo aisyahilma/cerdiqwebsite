@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      /* Flexbox container */
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; /* Mengizinkan wrap untuk konten responsif */
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      /* Styling for sections inside the container */
+      .mission,
+      .values {
+        flex: 1; /* Menyesuaikan ukuran relatif tergantung isi konten */
+        margin: 10px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+
+      .mission h2,
+      .values h2 {
+        color: #4caf50;
+      }
+
+      .image {
+        flex: 1; /* Menyesuaikan ukuran relatif tergantung isi konten */
+        margin: 10px;
+      }
+
+      .image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .values ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+      }
+
+      /* Footer styling */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mission" style="order: 2">
+        <h2>Our Mission</h2>
+        <p>
+          Pesantren Cerdiq aims to integrate Islamic teachings with modern
+          education, nurturing students to become well-rounded individuals who
+          contribute positively to society.
+        </p>
+      </div>
+      <div class="image" style="order: 3">
+        <img src="pesantren-cerdiq.jpg" alt="Pesantren Cerdiq" />
+      </div>
+      <div class="values" style="order: 1">
+        <h2>Our Values</h2>
+        <ul>
+          <li>Humility</li>
+          <li>Respect</li>
+          <li>Dedication to Learning</li>
+          <li>Community Service</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Pesantren Cerdiq. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

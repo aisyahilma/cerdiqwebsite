@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesantren Cerdiq - Flexbox Example</title>
+    <style>
+      /* Flexbox container */
+      .container {
+        display: flex;
+        justify-content: space-between; /* Align items in a row with space between */
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      /* Styling for sections inside the container */
+      .content {
+        flex-grow: 1; /* Allow content to grow to fill remaining space */
+        margin-right: 20px; /* Add spacing between content and sidebar */
+      }
+
+      .sidebar {
+        flex-basis: 30%; /* Set initial width for sidebar */
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+
+      .sidebar h2 {
+        color: #4caf50;
+      }
+
+      /* Footer styling */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pesantren Cerdiq</h1>
+      <p>Empowering Future Leaders</p>
+    </header>
+
+    <div class="container">
+      <div class="mission">
+        <h2>Our Mission</h2>
+        <p>
+          Pesantren Cerdiq aims to integrate Islamic teachings with modern
+          education, nurturing students to become well-rounded individuals who
+          contribute positively to society.
+        </p>
+      </div>
+
+      <div class="values">
+        <h2>Our Values</h2>
+        <ul>
+          <li>Humility</li>
+          <li>Respect</li>
+          <li>Dedication to Learning</li>
+          <li>Community Service</li>
+        </ul>
+      </div>
+      <div class="additional">
+        <h2>Additional Information</h2>
+        <p>
+          Pesantren Cerdiq also emphasizes environmental awareness and
+          sustainable practices in its educational programs, preparing students
+          for a holistic approach to life.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Pesantren Cerdiq. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

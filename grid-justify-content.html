@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Justify Content Example - Pesantren Cerdiq</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1,
+      footer p {
+        margin: 10px 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        justify-content: center; /* Centering the items horizontally */
+        padding: 20px;
+      }
+
+      .item {
+        background-color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .main {
+        grid-column: 1 / -1;
+        background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .content {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Empowering Students with Knowledge and Faith</p>
+    </header>
+
+    <div class="grid-container">
+      <div class="item">Menu</div>
+      <div class="item">Sidebar</div>
+      <div class="item">Additional Info</div>
+      <div class="main">
+        <div class="content">
+          <p>
+            Pesantren Cerdiq is a modern educational institution that combines
+            traditional Islamic teachings with contemporary academic excellence.
+            Our mission is to cultivate students who are not only academically
+            proficient but also possess strong moral and spiritual values.
+          </p>
+          <p>
+            At Pesantren Cerdiq, students engage in a rigorous academic program
+            alongside a comprehensive religious curriculum. This dual approach
+            ensures that our students are well-prepared for both higher
+            education and their roles as ethical leaders in society.
+          </p>
+          <p>
+            Our facilities include state-of-the-art classrooms, a well-stocked
+            library, and various recreational areas that support a balanced
+            lifestyle. We also offer numerous extracurricular activities that
+            promote personal growth and community engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        For more information, visit www.pesantrencerdiq.id or contact us at
+        info@pesantrencerdiq.id
+      </p>
+    </footer>
+  </body>
+</html>

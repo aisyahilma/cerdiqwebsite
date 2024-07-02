@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Lines Example - Pesantren Cerdiq</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1,
+      footer p {
+        margin: 10px 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+          4,
+          1fr
+        ); /* 4 kolom dengan ukuran yang sama */
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding: 20px;
+      }
+
+      .header {
+        grid-column: 1 / -1; /* Membentang dari garis grid pertama ke yang terakhir */
+        background-color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .menu {
+        grid-column: 1 / 2; /* Dari kolom pertama ke kolom kedua */
+        background-color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .main {
+        grid-column: 2 / 4; /* Dari kolom kedua ke kolom keempat */
+        background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .sidebar {
+        grid-column: 4 / 5; /* Dari kolom keempat ke kolom kelima */
+        background-color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .footer {
+        grid-column: 1 / -1; /* Membentang dari garis grid pertama ke yang terakhir */
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .content {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Empowering Students with Knowledge and Faith</p>
+    </header>
+
+    <div class="grid-container">
+      <div class="menu">Menu</div>
+      <div class="main">
+        <div class="content">
+          <p>
+            Pesantren Cerdiq provides a comprehensive education system that
+            integrates Islamic teachings with modern academic disciplines. Our
+            curriculum is designed to foster intellectual, emotional, and
+            spiritual growth, preparing students to become leaders in their
+            communities and beyond. Join us in our mission to empower students
+            with knowledge and faith.
+          </p>
+          <p>
+            Our programs include advanced learning opportunities in various
+            fields, character building exercises, and technological integration
+            to keep students abreast with the latest advancements. We believe in
+            nurturing well-rounded individuals who can contribute positively to
+            society.
+          </p>
+          <p>
+            Pesantren Cerdiq also emphasizes global perspectives and community
+            engagement. We encourage students to participate in cultural
+            exchange programs and community service projects to develop a sense
+            of empathy and global awareness.
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">Sidebar</div>
+    </div>
+
+    <footer class="footer">
+      <p>Contact us at info@pesantrencerdiq.id for more information.</p>
+    </footer>
+  </body>
+</html>

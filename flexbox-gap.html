@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox with Flex Gap Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Properti gap untuk mengatur jarak antar item */
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .item {
+        flex: 1 1 calc(33.333% - 40px); /* Basis untuk 3 item per baris dengan jarak */
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      header,
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      header h1,
+      footer p {
+        margin: 10px 0;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: justify;
+        background-color: #e0e0e0;
+        margin: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pesantren Cerdiq</h1>
+      <p>Shaping Future Leaders with Integrity and Knowledge</p>
+    </header>
+
+    <div class="container">
+      <div class="item">Innovative Curriculum</div>
+      <div class="item">Holistic Development</div>
+      <div class="item">Cultural Exchange</div>
+      <div class="item">Leadership Programs</div>
+      <div class="item">Community Service</div>
+    </div>
+
+    <div class="content">
+      <p>
+        Pesantren Cerdiq is dedicated to providing an innovative curriculum that
+        combines traditional Islamic teachings with modern education. Our
+        approach ensures that students receive a balanced education that
+        prepares them for both religious and worldly success. We emphasize
+        holistic development, nurturing the intellectual, emotional, and
+        spiritual growth of our students.
+      </p>
+      <p>
+        Our campus serves as a melting pot of cultures where students from
+        diverse backgrounds come together to learn and grow. Through our
+        cultural exchange programs, students gain a broader perspective on
+        global issues and develop an appreciation for different cultures. This
+        exposure helps them become more adaptable and open-minded individuals.
+      </p>
+      <p>
+        Leadership programs at Pesantren Cerdiq are designed to cultivate the
+        next generation of leaders. We provide numerous opportunities for
+        students to develop their leadership skills through various initiatives
+        and projects. By participating in these programs, students learn to take
+        responsibility, make informed decisions, and inspire others.
+      </p>
+      <p>
+        Community service is a cornerstone of the Pesantren Cerdiq experience.
+        We encourage students to actively engage in community service projects,
+        fostering a sense of empathy and social responsibility. These projects
+        allow students to apply their knowledge in real-world settings, making a
+        positive impact on society.
+      </p>
+      <p>
+        Join us at Pesantren Cerdiq, where we are committed to shaping future
+        leaders with integrity and knowledge. Our comprehensive education
+      </p>
+    </div>
+  </body>
+</html>
